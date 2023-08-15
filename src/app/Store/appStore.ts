@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import {rootReducer} from "./appReducer.ts";
-import {baseApi} from "../shared/api/baseApi.ts";
+import {baseApi} from "../../shared/api/baseApi.ts";
 import { persistReducer, persistStore } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import {FLUSH, PAUSE, PERSIST, PURGE, REGISTER, REHYDRATE} from "redux-persist/es/constants";
