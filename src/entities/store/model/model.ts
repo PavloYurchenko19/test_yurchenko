@@ -1,9 +1,9 @@
-import {ProductI} from "../api/model.ts";
+import {ProductMapedI} from "../api/model.ts";
 
 export interface ProductCartPropsI {
-    product: ProductI
+    product: ProductMapedI
 }
 
 export interface AddButtonPropsI {
-    product: ProductI
+    product: ProductMapedI
 }

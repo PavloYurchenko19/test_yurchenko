@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 import {Provider} from "react-redux";
-import {persistor, setupStore} from "./Store/appStore.ts";
+import {persistor, setupStore} from "./Redux/store/appStore.ts";
 import { PersistGate } from 'redux-persist/integration/react';
 import {BrowserRouter} from "react-router-dom";
 

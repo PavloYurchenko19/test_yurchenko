@@ -12,6 +12,17 @@ export interface ProductI {
     images: string[];
 }
 
+export interface  ProductMapedI {
+    id: number;
+    name: string;
+    description: string;
+    price: number;
+    rating: number;
+    stock: number;
+    category: string;
+    img: string;
+}
+
 export interface ProductListI {
     products: ProductI[];
     total: number;
@@ -19,8 +30,12 @@ export interface ProductListI {
     limit: number;
 }
 
-export interface DataToFilterProductListI {
-    search: string
-    skip: number
-    select: string
+export interface DataToSearchProductListI {
+    q: string
+}
+export interface DataToCreateProductI {
+    title: string,
+    price: number,
+    description: string,
+    rating: number,
 }

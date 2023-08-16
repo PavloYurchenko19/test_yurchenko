@@ -1,12 +1,10 @@
 import styled, { keyframes } from 'styled-components';
 
-// Keyframes for the loader animation
 const spin = keyframes`
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 `;
 
-// Styled component for the loader
 export const LoaderWrapper = styled.div`
   display: flex;
   justify-content: center;

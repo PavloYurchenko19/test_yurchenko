@@ -10,7 +10,6 @@ import {
 } from "./ProductCart.styled.ts";
 import * as React from "react";
 import {ProductCartPropsI} from "../../../entities/store/model/model.ts";
-import {ButtonBuy} from "../Buttons/ButtonBuy.tsx";
 import {AddButton} from "../Buttons/AddButton.tsx";
 
 export const ProductCart:React.FC<ProductCartPropsI> = ({product}) => {
@@ -19,11 +18,11 @@ export const ProductCart:React.FC<ProductCartPropsI> = ({product}) => {
         <ProductContainer>
             <ImageContainer>
                 <ProductImage
-                    src={product.thumbnail}
-                    alt={product.title}
+                    src={product.img}
+                    alt={product.name}
                 />
             </ImageContainer>
-            <ProductTitle>{product.title}</ProductTitle>
+            <ProductTitle>{product.name}</ProductTitle>
             <ProductDescription>{product.description}</ProductDescription>
 
             <ButtonsWithPrice>
@@ -32,7 +31,6 @@ export const ProductCart:React.FC<ProductCartPropsI> = ({product}) => {
                     <ProductInformation>Rating: {product.rating}</ProductInformation>
                 </ProductPriceAndRate>
                 <ButtonsWrapper>
-                    <ButtonBuy/>
                     <AddButton product={product}/>
                 </ButtonsWrapper>
             </ButtonsWithPrice>
